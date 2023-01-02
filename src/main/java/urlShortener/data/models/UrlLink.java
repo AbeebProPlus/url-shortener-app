@@ -13,10 +13,4 @@ public class UrlLink {
     private String urlId;
     private String originalUrl;
     private String shortenedUrl;
-    private LocalDateTime creationTime = LocalDateTime.now();
-
-    @Override
-    public String toString(){
-        return String.format("%s", getShortenedUrl());
-    }
 }
