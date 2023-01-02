@@ -32,10 +32,8 @@ class UrlServiceImplementationTest {
         shortenUrlRequest.setUrl(urlLink);
 
         shortenUrlRequestTwo.setUrl("");
-        shortenUrlRequestThree.setUrl("https://codereview.stackexchange.com/questions/84812/\" +\n" +
-                "                \"java-class-that-generates-a-short-url-string-for-an-input-string");
-        shortenUrlRequestFour.setUrl("https://codereview.stackexchange.com/questions/84812/\" +\n" +
-                "                \"java-class-that-generates-a-short-url-string-for-an-input-string");
+        shortenUrlRequestThree.setUrl("https://codereview.stackexchange.com/questions/84812/java-class-that-generates-a-short-url-string-for-an-input-string");
+        shortenUrlRequestFour.setUrl("https://codereview.stackexchange.com/questions/84812/java-class-that-generates-a-short-url-string-for-an-input-string");
     }
 
     @Test
