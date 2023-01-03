@@ -20,8 +20,7 @@ public class UrlController {
         return urlService.shortenUrl(shortenUrlRequest);
     }
     @GetMapping("/url/{shortenedUrl}")
-    public ResponseEntity<?> getOriginalUrl(@PathVariable String shortenedUrl,  HttpServletResponse response) throws IOException {
+    public void getOriginalUrl(@PathVariable String shortenedUrl,  HttpServletResponse response) throws IOException {
          response.sendRedirect(urlService.getUrl(shortenedUrl).getOriginalUrl());
-         return null;
     }
 }
